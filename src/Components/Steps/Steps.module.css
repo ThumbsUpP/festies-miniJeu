@@ -1,0 +1,43 @@
+.Step {
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -25%;
+    z-index: 1;
+    align-self: center;
+    /* transform-origin: center */
+}
+/* 
+.Triangle {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
+} */
+
+@media (max-width : 450px) {
+/*   .Triangle {
+    border-top: 12.5px solid transparent;
+    border-left: 25px solid rgb(255, 255, 255);
+    border-bottom: 12.5px solid transparent;
+  } */
+  .Step {
+    animation-duration: 4s;
+}}
+
+@keyframes slidein {
+  from {
+    margin-left: 135%;
+  /*   z-index: 10; */
+  }
+
+  to {
+    margin-left: 0%;
+    /* width: 100%; */
+    /* z-index: 10; */
+    /* transform-origin: center; */
+  
+  }
+}

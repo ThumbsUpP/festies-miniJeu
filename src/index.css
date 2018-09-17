@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GothamRounded-Bold'), url('./fonts/GothamRounded-Bold.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'GothamRounded-Bold', sans-serif;
+  overflow-y: hidden
+
+}
+
+
+
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   *
+   * If you're not using "display: flex", you can remove this style.
+   */
+  width: 100%;
+  padding: 17px;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #FF4E00;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+  transform: scale(1.2);
+  transform-origin: center;
+  
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #FFFFFF;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #FFFFFF;
+  font-size: 58px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+  font-family: GothamRounded-Bold;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+
+}
+
+/*
+ * Sample background styles. Use these with e.g.:
+ *
+ *   <CircularProgressbar
+ *     className="CircularProgressbar-inverted"
+ *     background
+ *     percentage={50}
+ *   />
+ */
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+  fill: #3e98c7;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+  fill: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+  stroke: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+  stroke: transparent;
+}

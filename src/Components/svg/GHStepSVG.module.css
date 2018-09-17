@@ -1,0 +1,11 @@
+.SVGSteps {
+    animation: SVGStep 6s linear;
+}
+
+@keyframes SVGStep {
+    0%        {fill: #FC4F1E}
+    48%        {fill: #FC4F1E}
+  52%       {fill: #FFFFFF}
+  100% {fill: #FFFFFF}
+
+}

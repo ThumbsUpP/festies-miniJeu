@@ -1,0 +1,49 @@
+.Slider {
+    background-color: #2CFEE6;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font: 28px/1em 'Helvetica';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  
+  .joystick {
+
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    z-index: 500;
+
+    
+  }
+/*   @media (max-width: 700px) {
+    .joystick {
+      transform: scale(0.5)
+    }
+      
+    };
+   */
+  .triangle {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+  }
+
+  .piste {
+    width: 100%;
+    height: 100px;
+    border-top : 4px solid #FC4F1E;
+    border-bottom : 4px solid #FC4F1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 192, 203, 0) 50%, rgba(255, 255, 255, 0.3) 50%);
+
+  }
